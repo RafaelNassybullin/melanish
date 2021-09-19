@@ -26,7 +26,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   text-transform: uppercase;
   align-items: center;
-  padding: 3.681vw 3vw;
+  padding: 1.681vw 3vw;
   z-index: 99;
 
   .logo {
