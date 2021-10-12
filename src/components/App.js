@@ -5,8 +5,12 @@ import SliderMain from "./SliderMain";
 
 
 function App() {
+
+    console.log('выполнился рендер!!!')
+
     return (
         <>
+
             <GlobalStyles/>
             <Navbar/>
             <SliderMain/>
