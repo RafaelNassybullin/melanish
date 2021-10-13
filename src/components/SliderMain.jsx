@@ -9,6 +9,7 @@ import SlideFour from "./SlideFour";
 import SlideFive from "./SlideFive";
 import SliderSix from "./SlideSix";
 import ets from "./Animations";
+import useWindowSize from "@rooks/use-window-size";
 
 SwiperCore.use([Mousewheel]);
 
@@ -21,7 +22,10 @@ const arrsl = [
     {slide: SliderSix},
 ]
 
+
 export default function SliderMain() {
+
+    const w3 = useWindowSize()
 
     return (
         <Slider>
@@ -33,12 +37,23 @@ export default function SliderMain() {
                 modules={[Mousewheel]}
                 onSlideChange={(e) => {
                     switch (e.realIndex) {
-                        case 1: ets.new2(); break
-                        case 2: ets.new3(); break
-                        case 3: ets.new4(); break
-                        case 4: ets.new5(); break
-                        case 5: ets.new6(); break
-                        default: ets.new()
+                        case 1:
+                            ets.new2();
+                            break
+                        case 2:
+                            w3.innerWidth <= 433 ? ets.new3mobile() : ets.new3();
+                            break
+                        case 3:
+                            ets.new4();
+                            break
+                        case 4:
+                            ets.new5();
+                            break
+                        case 5:
+                            w3.innerWidth <= 433 ? ets.new7mobile() : ets.new6();
+                            break
+                        default:
+                            ets.new()
                     }
                 }}
                 mousewheel={true}
@@ -55,5 +70,4 @@ const Slider = styled.section`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  
 `

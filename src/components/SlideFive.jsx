@@ -27,7 +27,9 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  @media(max-width: 433px){
+      flex-direction: column;
+  }
 `
 
 const ImageWrap = styled.div`
@@ -37,7 +39,12 @@ const ImageWrap = styled.div`
   overflow: hidden;
   border-radius: 1.5vw;
   transform: translateY(100vw);
-
+  @media(max-width: 433px){
+      width: 70.458vw;
+      height: 46.097vw;
+      margin: 4vw;
+      border-radius: 3.5vw;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -48,5 +55,14 @@ const ImageWrap = styled.div`
   &:nth-child(2) {
     align-self: flex-end;
     margin-bottom: 1vw;
+    img{
+      @media(max-width: 433px){
+          object-position: 0vw -18vw;
+      }
+    }
+    @media(max-width: 433px){
+        align-self: center;
+      
+    }
   }
 `

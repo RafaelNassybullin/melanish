@@ -47,6 +47,11 @@ const TextWrap = styled.div`
     font-weight: 400;
     -webkit-text-stroke: 0.146vw black;
     color: #ffffff;
+    @media (max-width: 433px) {
+      left: -46vw;
+      bottom: -41vw;
+      font-size: 26.625vw;
+    }
 
     &:nth-child(3) {
       color: black;
@@ -61,12 +66,20 @@ const Image = styled.div`
   top: -16vw;
   left: 50%;
   transform: translateX(-50%) scale(0);
+  @media (max-width: 433px) {
+    width: 47.458vw;
+    height: 72.097vw;
+    top: -38vw;
+  }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1.5vw;
+    @media (max-width: 433px) {
+      border-radius: 3.5vw;
+    }
   }
 
 `
