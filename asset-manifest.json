@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/melanish/static/js/main.6b27c577.chunk.js",
+    "main.js.map": "/melanish/static/js/main.6b27c577.chunk.js.map",
+    "runtime-main.js": "/melanish/static/js/runtime-main.22b850f2.js",
+    "runtime-main.js.map": "/melanish/static/js/runtime-main.22b850f2.js.map",
+    "static/js/2.91693c77.chunk.js": "/melanish/static/js/2.91693c77.chunk.js",
+    "static/js/2.91693c77.chunk.js.map": "/melanish/static/js/2.91693c77.chunk.js.map",
+    "index.html": "/melanish/index.html",
+    "static/js/2.91693c77.chunk.js.LICENSE.txt": "/melanish/static/js/2.91693c77.chunk.js.LICENSE.txt",
+    "static/media/0d76d85861c81f297adccd6509e933c1.2f2fa08f.jpg": "/melanish/static/media/0d76d85861c81f297adccd6509e933c1.2f2fa08f.jpg",
+    "static/media/1.c2dce4bc.jpg": "/melanish/static/media/1.c2dce4bc.jpg",
+    "static/media/2.9742464b.jpg": "/melanish/static/media/2.9742464b.jpg",
+    "static/media/3.78d0d602.jpg": "/melanish/static/media/3.78d0d602.jpg",
+    "static/media/5.e051c1f8.jpg": "/melanish/static/media/5.e051c1f8.jpg",
+    "static/media/b4612c4236ad349bc6d49440f80a3bd8.05a86fdb.jpg": "/melanish/static/media/b4612c4236ad349bc6d49440f80a3bd8.05a86fdb.jpg",
+    "static/media/devyshka_v_porsche.06b9fde7.jpg": "/melanish/static/media/devyshka_v_porsche.06b9fde7.jpg",
+    "static/media/endimg.1eec1575.jpg": "/melanish/static/media/endimg.1eec1575.jpg",
+    "static/media/main1.7dcfe9c2.jpg": "/melanish/static/media/main1.7dcfe9c2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22b850f2.js",
+    "static/js/2.91693c77.chunk.js",
+    "static/js/main.6b27c577.chunk.js"
+  ]
+}
