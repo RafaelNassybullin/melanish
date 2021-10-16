@@ -2,16 +2,15 @@ import React from "react";
 import GlobalStyles from "./Assets/GlobalStyles";
 import Navbar from "./Navbar";
 import SliderMain from "./SliderMain";
-// import useWindowSize from "@rooks/use-window-size";
+
 
 function App() {
-
 
     console.log('выполнился рендер!!!')
 
     return (
         <>
-            {/*{w.innerWidth}*/}
+            {/*сделать переключатель темы с заменой изображений REDUX, добавить компонент LAZYLOADING*/}
             <GlobalStyles/>
             <Navbar w/>
             <SliderMain/>

@@ -59,7 +59,7 @@ export default function SliderMain() {
                 mousewheel={true}
                 className="mySwiper">
                 {arrsl.map((item) => (
-                    <SwiperSlide>
+                    <SwiperSlide >
                         {item.slide}
                     </SwiperSlide>))}
             </Swiper>

@@ -1,4 +1,5 @@
 import gsap from 'gsap'
+import BezierEasing from "bezier-easing";
 
 const tl = gsap.timeline({onComplete(){tl.kill()}});
 const ts = gsap.timeline({onComplete(){ts.kill()}});
@@ -9,15 +10,15 @@ const ts5 = gsap.timeline({onComplete(){ts5.kill()}});
 
 const ets = {
     new(){
-        tl.to('.animoneh1', 1.2, {x: '0', delay: 1.3})
-            .to('.overlay', 1.2, {height: '0', delay: 0.5})
+        tl.to('.animoneh1', 1.2, {x: '0', delay: 1.3, ease: BezierEasing(.67,.18,.13,.76) })
+            .to('.overlay', 1.2, {height: '0', delay: 0.5, ease: BezierEasing(.67,.18,.13,.76)})
             .to('.navbar', 0.9, {top: '0'}, '-=0.3')
             .to('.animoneh1',0,{y:'-18vw'})
     },
     new2: () => {
-        ts.to('.ruller', 1.5, {right: '-110%', delay: 0.7})
+        ts.to('.ruller', 1.5, {right: '-110%', delay: 0.7, ease: BezierEasing(.67,.18,.13,.76)})
             .to('.image-two', 1.4, {scale: 1, delay: -1.5})
-            .to('.desig',0.9,{delay: 0, stagger:{ amount:0.6, y:'120vw'}})
+            .to('.desig',1.5,{delay: -0.7, stagger:{ amount:0.6, y:'120vw'}})
     },
     new3: () => {
         ts2.to('.test', 0.9, {x: '100%', delay: 0.2})
@@ -52,7 +53,7 @@ const ets = {
         ts5.to('.text-container',1,{x:0, delay:0.4})
             .to('.two-text', 0.4,{y:'-11vw'})
             .to('.one-text', 0.4,{y:'-22vw'})
-            .to('.anim-img6', 0.5,{scale:'1'})
+            .to('.anim-img6', 0.5,{scale:'1', ease: BezierEasing(.67,.18,.13,.76)})
             .to('.anim-img6', 0.2,{rotate:'7deg'})
     },
     new7mobile(){
